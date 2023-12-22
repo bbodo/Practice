@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.practice.FirstFragment"
+        android:label="연습용 문제"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.practice.SecondFragment"
+        android:label="두번쨰 화면"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+
+        <action
+            android:id="@+id/action_SecondFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ThirdFragment"
+        android:name="com.example.practice.ThirdFragment"
+        android:label="LinearLayout 연습 화면"
+        tools:layout="@layout/fragment_third">
+
+        <action
+            android:id="@+id/action_ThirdFragment_to_SecondFragment"
+            app:destination="@id/FourFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FourFragment"
+        android:name="com.example.practice.FourFragment"
+        android:label=" + FrameLayout 화면"
+        tools:layout="@layout/fragment_third">
+    <action
+        android:id="@+id/action_FourFragment_to_FiveFragment"
+        app:destination="@id/FiveFragment" />
+    </fragment>
+
+    <fragment
+    android:id="@+id/FiveFragment"
+    android:name="com.example.practice.FiveFragment"
+    android:label="RelativeLayout 연습 화면"
+    tools:layout="@layout/fragment_third">
+    <action
+        android:id="@+id/action_FiveFragment_to_SixFragment"
+        app:destination="@id/SixFragment" />
+</fragment>
+
+    <fragment
+        android:id="@+id/SixFragment"
+        android:name="com.example.practice.SixFragment"
+        android:label="Constraint 연습 화면"
+        tools:layout="@layout/fragment_third">
+        <action
+            android:id="@+id/action_SixFragment_to_SevenFragment"
+            app:destination="@id/SevenFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SevenFragment"
+        android:name="com.example.practice.SevenFragment"
+        android:label="Constraint 연습 화면"
+        tools:layout="@layout/fragment_third">
+        <action
+            android:id="@+id/action_SixFragment_to_SevenFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+
+</navigation>
