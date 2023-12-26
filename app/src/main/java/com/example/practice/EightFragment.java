@@ -9,17 +9,15 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.practice.databinding.FragmentSevenBinding;
-import com.example.practice.databinding.FragmentSixBinding;
+import com.example.practice.databinding.FragmentEightBinding;
 import com.google.android.material.appbar.MaterialToolbar;
 
-public class SevenFragment extends Fragment {
-
-    private FragmentSevenBinding binding;
+public class EightFragment extends Fragment {
+    private FragmentEightBinding binding;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding = FragmentSevenBinding.inflate(inflater, container, false);
+        binding = FragmentEightBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
@@ -30,11 +28,11 @@ public class SevenFragment extends Fragment {
 
         toolbar.setBackgroundColor(requireContext().getColor(R.color.lavender));
 
-        binding.tlNextButton.setOnClickListener(new View.OnClickListener() {
+        binding.glNextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(SevenFragment.this)
-                        .navigate(R.id.action_SevenFragment_to_EightFragment);
+                NavHostFragment.findNavController(EightFragment.this)
+                        .navigate(R.id.action_EightFragment_to_NineFragment);
             }
         });
 

@@ -84,9 +84,39 @@
         android:label="Constraint 연습 화면"
         tools:layout="@layout/fragment_third">
         <action
-            android:id="@+id/action_SixFragment_to_SevenFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_SevenFragment_to_EightFragment"
+            app:destination="@id/EightFragment" />
     </fragment>
 
+
+    <fragment
+        android:id="@+id/EightFragment"
+        android:name="com.example.practice.EightFragment"
+        android:label="GridLayout 연습 화면"
+        tools:layout="@layout/fragment_third">
+        <action
+            android:id="@+id/action_EightFragment_to_NineFragment"
+            app:destination="@id/NineFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/NineFragment"
+        android:name="com.example.practice.NineFragment"
+        android:label="TabLayout 연습 화면"
+        tools:layout="@layout/fragment_third">
+        <action
+            android:id="@+id/action_NineFragment_to_TenFragment"
+            app:destination="@id/TenFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/TenFragment"
+        android:name="com.example.practice.TenFragment"
+        android:label="데이터바인딩 연습 화면"
+        tools:layout="@layout/fragment_third">
+        <action
+            android:id="@+id/action_EightFragment_to_NineFragment"
+            app:destination="@id/NineFragment" />
+    </fragment>
 
 </navigation>

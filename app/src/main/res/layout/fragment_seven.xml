@@ -302,4 +302,13 @@
         </TableRow>
     </TableLayout>
 
+    <Button
+        android:id="@+id/tl_nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="다음 화면"/>
+
 </LinearLayout>
